@@ -51,7 +51,7 @@ jQuery(document).ready(function ($) {
     $('#clint-slider').bxSlider({
         pager: false,
         minSlides: 1,
-        maxSlides: 5,
+        maxSlides: 500,
         moveSlides: 2,
         slideWidth: 210,
         slideMargin: 25,
@@ -312,34 +312,7 @@ Sand mail
             jQuery(this).removeClass("animated fadeInDown");
         }
     });
-    
-    //animate first team member
-    jQuery('#first-person').bind('inview', function (event, visible) {
-        if (visible == true) {
-            jQuery('#first-person').addClass("animated pulse");
-        } else {
-            jQuery('#first-person').removeClass("animated pulse");
-        }
-    });
-    
-    //animate sectond team member
-    jQuery('#second-person').bind('inview', function (event, visible) {
-        if (visible == true) {
-            jQuery('#second-person').addClass("animated pulse");
-        } else {
-            jQuery('#second-person').removeClass("animated pulse");
-        }
-    });
 
-    //animate thrid team member
-    jQuery('#third-person').bind('inview', function (event, visible) {
-        if (visible == true) {
-            jQuery('#third-person').addClass("animated pulse");
-        } else {
-            jQuery('#third-person').removeClass("animated pulse");
-        }
-    });
-    
     //Animate price columns
     jQuery('.price-column, .testimonial').bind('inview', function (event, visible) {
         if (visible == true) {
@@ -374,14 +347,14 @@ Sand mail
 
 function initializeMap() {
 
-    var lat = '19.5045687'; //Set your latitude.
-    var lon = '-99.14665300000001'; //Set your longitude.
+    var lat = '19.3801164287523'; //Set your latitude.
+    var lon = '-99.16146614999997'; //Set your longitude.
 
     var centerLon = lon - 0.0105;
 
     var myOptions = {
         scrollwheel: false,
-        draggable: false,
+        draggable: true,
         disableDefaultUI: true,
         center: new google.maps.LatLng(lat, centerLon),
         zoom: 15,

@@ -5,13 +5,14 @@
     position: relative;
     margin:0 auto;
     overflow: hidden;
-    background: transparent url(../images/Slider.png) repeat-x 0% center; /* Replace with your background image*/
+    background: transparent url(../images/Slider_marcas.png) repeat-x 0% center; /* Replace with your background image*/
     background-size:auto 100%;
     -webkit-transition: background-position 1s ease-out 0.3s;
     -moz-transition: background-position 1s ease-out 0.3s;
     -o-transition: background-position 1s ease-out 0.3s;
     -ms-transition: background-position 1s ease-out 0.3s;
     transition: background-position 1s ease-out 0.3s;
+    opacity: 0.90;
 }
 
 .da-slider .triangle{
@@ -26,7 +27,7 @@
     left:0;
     width:100%;
     height:100%;
-    background: #FECE1A;
+    background: #ECBA09;
     opacity:0.85;
     filter: alpha(opacity=85);
 }
@@ -95,7 +96,7 @@
     font-weight: normal;
 }
 .da-slide p {
-    width: 45%;
+    width: 50%;
     padding:0px;
     top: 230px;
     color: #fff;
